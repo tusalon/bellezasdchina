@@ -1,22 +1,22 @@
-// sw.js - Service Worker para María Pilar Nails
+// sw.js - Service Worker para Belleza D China
 
-const CACHE_NAME = 'mariapilarnails-v1';
+const CACHE_NAME = 'bellezasdchina-v1';
 const urlsToCache = [
-  '/mariapilarnails/',
-  '/mariapilarnails/index.html',
-  '/mariapilarnails/admin.html',
-  '/mariapilarnails/admin-login.html',
-  '/mariapilarnails/setup-wizard.html',
-  '/mariapilarnails/editar-negocio.html',
-  '/mariapilarnails/manifest.json',
-  '/mariapilarnails/icons/icon-72x72.png',
-  '/mariapilarnails/icons/icon-96x96.png',
-  '/mariapilarnails/icons/icon-128x128.png',
-  '/mariapilarnails/icons/icon-144x144.png',
-  '/mariapilarnails/icons/icon-152x152.png',
-  '/mariapilarnails/icons/icon-192x192.png',
-  '/mariapilarnails/icons/icon-384x384.png',
-  '/mariapilarnails/icons/icon-512x512.png'
+  '/bellezasdchina/',
+  '/bellezasdchina/index.html',
+  '/bellezasdchina/admin.html',
+  '/bellezasdchina/admin-login.html',
+  '/bellezasdchina/setup-wizard.html',
+  '/bellezasdchina/editar-negocio.html',
+  '/bellezasdchina/manifest.json',
+  '/bellezasdchina/icons/icon-72x72.png',
+  '/bellezasdchina/icons/icon-96x96.png',
+  '/bellezasdchina/icons/icon-128x128.png',
+  '/bellezasdchina/icons/icon-144x144.png',
+  '/bellezasdchina/icons/icon-152x152.png',
+  '/bellezasdchina/icons/icon-192x192.png',
+  '/bellezasdchina/icons/icon-384x384.png',
+  '/bellezasdchina/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/mariapilarnails/icons/icon-192x192.png');
+            return caches.match('/bellezasdchina/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para María Pilar Nails');
+console.log('✅ Service Worker configurado para Belleza D China');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);

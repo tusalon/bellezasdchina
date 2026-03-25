@@ -1,20 +1,20 @@
 {
-  "name": "María Pilar Nails",
-  "short_name": "María",
+  "name": "Belleza D China",
+  "short_name": "Belleza",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/mariapilarnails/",
-  "scope": "/mariapilarnails/",
+  "start_url": "/bellezasdchina/",
+  "scope": "/bellezasdchina/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/mariapilarnails/icons/icon-192x192.png",
+      "src": "/bellezasdchina/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/mariapilarnails/icons/icon-512x512.png",
+      "src": "/bellezasdchina/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
