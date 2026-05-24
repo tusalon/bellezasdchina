@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Belleza D China
 
-const CACHE_NAME = 'bellezasdchina-v29';
+const CACHE_NAME = 'bellezasdchina-v25';
 const urlsToCache = [
   '/bellezasdchina/',
   '/bellezasdchina/index.html',
