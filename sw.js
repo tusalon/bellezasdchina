@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Belleza D China
 
-const CACHE_NAME = 'bellezasdchina-v29';
+const CACHE_NAME = 'bellezasdchina-v47';
 const urlsToCache = [
   '/bellezasdchina/',
   '/bellezasdchina/index.html',
@@ -17,7 +17,14 @@ const urlsToCache = [
   '/bellezasdchina/icons/icon-152x152.png',
   '/bellezasdchina/icons/icon-192x192.png',
   '/bellezasdchina/icons/icon-384x384.png',
-  '/bellezasdchina/icons/icon-512x512.png'
+  '/bellezasdchina/icons/icon-512x512.png',
+  '/bellezasdchina/vendor/react.production.min.js',
+  '/bellezasdchina/vendor/react-dom.production.min.js',
+  '/bellezasdchina/vendor/babel.min.js',
+  '/bellezasdchina/vendor/bcrypt.min.js',
+  '/bellezasdchina/vendor/tailwind-browser.js',
+  '/bellezasdchina/vendor/lucide/lucide.css',
+  '/bellezasdchina/vendor/lucide/lucide.woff2'
 ];
 
 // ============================================
